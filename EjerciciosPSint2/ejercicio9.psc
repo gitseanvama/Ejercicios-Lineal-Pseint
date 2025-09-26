@@ -1,37 +1,63 @@
-Algoritmo sin_titulo
+Proceso Ejericicio9
+    // Declarar variables
+    Definir diaN1, mesN1, anioN1, diaA, mesA, anioA Como Entero
+    Definir diaN2, mesN2, anioN2 Como Entero
+    Definir diaN3, mesN3, anioN3 Como Entero
+    Definir edad1, edad2, edad3 Como Entero
 	
-	Definir diaN, mesN, anioN, diaA, mesA, anioA, edad Como Entero
-	Definir i Como Entero
+    // Pedir fecha actual
+    Escribir "Ingrese la fecha actual:"
+    Escribir "Día: " Sin Saltar
+    Leer diaA
+    Escribir "Mes: " Sin Saltar
+    Leer mesA
+    Escribir "Año: " Sin Saltar
+    Leer anioA
 	
-	// Fecha actual (puedes modificarla seg�n necesites)
-	diaA <- 2
-	mesA <- 9
-	anioA <- 2025
+    // Persona 1
+    Escribir "Ingrese fecha de nacimiento de la Persona 1:"
+    Escribir "Día: " Sin Saltar
+    Leer diaN1
+    Escribir "Mes: " Sin Saltar
+    Leer mesN1
+    Escribir "Año: " Sin Saltar
+    Leer anioN1
 	
-	Para i <- 1 Hasta 3 Con Paso 1 Hacer
-		// Fechas de nacimiento predefinidas
-		Si i = 1 Entonces
-			diaN <- 10
-			mesN <- 5
-			anioN <- 1997
-		FinSi
-		Si i = 2 Entonces
-			diaN <- 23
-			mesN <- 11
-			anioN <- 2000
-		FinSi
-		Si i = 3 Entonces
-			diaN <- 15
-			mesN <- 2
-			anioN <- 1990
-		FinSi
-		
-		// C�lculo de la edad
-		edad <- anioA - anioN
-		Si (mesA < mesN) O (mesA = mesN Y diaA < diaN) Entonces
-			edad <- edad - 1
-		FinSi
-		
-		Escribir "La edad de la persona ", i, " es: ", edad, " a�os"
-	FinPara
-FinAlgoritmo
+    edad1 <- anioA - anioN1
+    Si (mesA < mesN1) O (mesA = mesN1 Y diaA < diaN1) Entonces
+        edad1 <- edad1 - 1
+    FinSi
+	
+    // Persona 2
+    Escribir "Ingrese fecha de nacimiento de la Persona 2:"
+    Escribir "Día: " Sin Saltar
+    Leer diaN2
+    Escribir "Mes: " Sin Saltar
+    Leer mesN2
+    Escribir "Año: " Sin Saltar
+    Leer anioN2
+	
+    edad2 <- anioA - anioN2
+    Si (mesA < mesN2) O (mesA = mesN2 Y diaA < diaN2) Entonces
+        edad2 <- edad2 - 1
+    FinSi
+	
+    // Persona 3
+    Escribir "Ingrese fecha de nacimiento de la Persona 3:"
+    Escribir "Día: " Sin Saltar
+    Leer diaN3
+    Escribir "Mes: " Sin Saltar
+    Leer mesN3
+    Escribir "Año: " Sin Saltar
+    Leer anioN3
+	
+    edad3 <- anioA - anioN3
+    Si (mesA < mesN3) O (mesA = mesN3 Y diaA < diaN3) Entonces
+        edad3 <- edad3 - 1
+    FinSi
+	
+    // Mostrar resultados
+    Escribir "La edad de la Persona 1 es: ", edad1, " años."
+    Escribir "La edad de la Persona 2 es: ", edad2, " años."
+    Escribir "La edad de la Persona 3 es: ", edad3, " años."
+FinProceso
